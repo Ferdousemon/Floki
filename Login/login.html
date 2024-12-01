@@ -17,57 +17,27 @@
   <title>Floki INU Faucet ~ Login</title>
 </head>
 <body>
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <div class="content-wrap mx-auto">
-
-          <!-- site name -->
-          <div class="site-name">
-            <a href="">
-              <img src="img/logo.png" alt="">
-            </a>
-          </div>
-
-          <!-- welcome -->
-          <div class="text-center py-3">
-            <p class="bold">Welcome Back!</p>
-          </div>
-
-          <!-- form -->
-          <form action="">
-            <div class="form-group mb-4 position-relative">
-              <input class="form-control" type="email" name="email" placeholder="Enter email">
-              
-              <!-- mail icon -->
-              <div class="input-icon"><i class='bx bx-mail-send'></i></div>
-            </div>
-
-            <div class="form-group mb-5 position-relative">
-              <input class="form-control mb-3" type="password" name="password" placeholder="Enter password">
-
-              <!-- lock icon -->
-              <div class="input-icon"><i class='bx bx-lock'></i></div>
-
-              <!-- forgot password -->
-              <div class="text-end mb-4">
-                <a href="reset.html" class="small-link bold" style="font-size: 1.3rem;">
-                  Forgot password?
-                </a>
-              </div>
-            </div>
-
-            <button class="btn-submit w-100"  type="submit">Sign In</button>
-          </form>
-
-          <!-- extra link -->
-          <p class="text-center extra-link">
-            Don't have an account?
-            <a href="signup.html" class="small-link underline">Sign up</a>
-          </p>
+  <div class="container-fluid d-flex justify-content-center align-item-center">
+    <form class="max-auto">
+      <a href="" class="logo">
+        <img src="img/babydoge_fq.png" alt="">
+        <span>Babydoge</span>
+      </a>
+        <h3 class="text-center">Login</h3>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">User Name</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          
         </div>
-      </div>
-    </div>
-  </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1">
+          <div id="emailHelp" class="form-text"><a href="#">Forget Password</a></div>
+        </div>
+        <button type="submit" class="btn btn-primary">Login</button>
+        <p class="text-center mt-2">Do not have an account?<a href="">Register</a></p>
+        </div>
+      </form>
+</div>
 </body>
 </html>
