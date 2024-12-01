@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="light dark" />
+
+    <!-- ##########  fontawsome ########## -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      crossorigin="anonymous" />
+
+    <!-- ########## Boxicons ########## -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- ########## materials icon ##########  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- ##########  bootstrap stylesheet ########## -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+      crossorigin="anonymous">
+
+    <!-- ########## main stylesheet ########## -->
+    <link rel="stylesheet" href="css/dashboard.css">
+
+    <title>FlokiFaucet || Dashboard</title>
+  </head>
+
+  <body id="body">
+    <div class="wrapper-parent">
+      <!-- ########## sidebar menu ########## -->
+      <div id="menu" class="menu-wrap hide">
+        <!-- # faucet name # -->
+        <div class="site-name">
+          <a href="dashboard.html">
+            <img src="img/logo.png" class="mt-4" alt="">
+          </a>
+        </div>
+
+        <!-- # Nav List # -->
+        <ul class="insideScroll text-white mt-2">
+          <li class="hover">
+            <a href="dashboard.html" class="">
+              <i class="material-icons">dashboard</i>
+              Dashboard
+            </a>
+          </li>
+
+          <li class="hover">
+            <a href="#!" class="sub-btn one">
+              <div class="flex-icon">
+                <i class="fas fa-gift"></i>
+                Staking
+              </div>
+
+              <div>
+                <i class="fas fa-angle-down ms-auto"></i>
+              </div>
+            </a>
+
+            <ul class="sub-menu one">
+              <li><a href="#!">Option one</a></li>
+              <li><a href="#!">Option two</a></li>
+            </ul>
+          </li>
+
+          <li class="hover">
+            <a href="withdraw.html">
+              <i class="fas fa-wallet"></i>
+              withdraw
+            </a>
+          </li>
+
+          <li class="hover">
+            <a href="faucet.html" class="">
+              <i class="fas fa-clock"></i>
+              Faucet Claim
+            </a>
+          </li>
+
+          <li class="hover">
+            <a href="#!" class="sub-btn two">
+              <div class="flex-icon">
+                <i class='bx bx-grid-alt'></i>
+                Offerwalls
+              </div>
+
+              <div class="">
+                <i class="fas fa-angle-down ms-auto"></i>
+              </div>
+            </a>
+
+            <ul class="sub-menu two">
+              <li><a href="#!">Dropdown One</a></li>
+              <li><a href="#!">Dropdown Two</a></li>
+            </ul>
+          </li>
+
+          <li class="hover">
+            <a href="quize.html" class="">
+              <i class="fas fa-gamepad mt-1"></i>
+              quize
+            </a>
+          </li>
+
+          <li class="hover">
+            <a href="ptc.html" class="">
+              <i class="material-icons">mouse</i>
+              PTC Surf
+            </a>
+          </li>
+
+          <li class="hover">
+            <a href="window-ptc.html" class="">
+              <i class="material-icons">mouse</i>
+              Window PTC
+            </a>
+          </li>
+
+          <li class="hover">
+            <a href="shortlink.html" class="">
+              <i class="fas fa-external-link-alt"></i>
+              Shortlink Wall
+            </a>
+          </li>
+
+          <li class="hover">
+            <a href="leaderboards.html" class="">
+              <i class="fas fa-trophy"></i>
+              Leaderboards
+            </a>
+          </li>
+
+          <li class="title">
+            <p>Advertise Section</p>
+          </li>
+
+          <li class="hover">
+            <a href="#!" class="sub-btn three">
+              <div class="flex-icon">
+                <i class="fas fa-image"></i>
+                Buy Ads
+              </div>
+
+              <div class="">
+                <i class="fas fa-angle-down ms-auto"></i>
+              </div>
+            </a>
+
+            <ul class="sub-menu three">
+              <li><a href="#!">Dropdown One</a></li>
+              <li><a href="#!">Dropdown Two</a></li>
+            </ul>
+          </li>
+
+          <li class="title">
+            <p>User Section</p>
+          </li>
+
+          <li class="hover">
+            <a href="account.html" class="">
+              <i class="material-icons">account_box</i>
+              Account
+            </a>
+          </li>
+
+          <li class="hover">
+            <a href="history.html" class="">
+              <i class="fas fa-recycle"></i>
+              History
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- responsive overlay -->
+      <div class="responsive-overlay"></div>
+
+      <!-- ########## main content ########## -->
+      <div class="content-wrap">
+        <!-- top row -->
+        <div class="top-bar sticky-top">
+          <div class="container-fluid">
+            <div class="row px-3">
+              <div class="col-12 bg">
+                <div class="row">
+                  <div class="col-2 col-sm-1">
+                    <!-- ## hamburger icon ## -->
+                    <div id="hideshow" href="#!" class="menu-toggle-btn">
+                      <span></span>
+                      <span class="w-75"></span>
+                      <span></span>
+                    </div>
+
+                    <!-- ## hamburger icon responsive ## -->
+                    <div id="hideshow" href="#!" class="menu-toggle-btn lg">
+                      <span></span>
+                      <span class="w-75"></span>
+                      <span></span>
+                    </div>
+                  </div>
+
+                  <!-- display balance -->
+                  <div class="col-4 col-sm-5">
+                    <div class="top-balance">
+                      <p>78478486 Coins</p>
+                    </div>
+                  </div>
+
+                  <!-- top row cta -->
+                  <div class="col-6 d-flex justify-content-end">
+                    <a href="#!">
+                      <div class="topbar-notif">
+                        <img src="img/logout.svg" alt="">
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- #### dashboard main content #### -->
+        <div class=" main-content">
+          <div class="container-fluid">
+
+            <div class="row align-items-center px-3">
+              <div class="col-lg-7">
+                <div class="welcome-card mb-5 mb-lg-0">
+                  <div class="welcome-card__title">
+                    <div class="icon">
+                      <img src="img/polygon.svg" alt="">
+                    </div>
+
+                    <h2>Smart People Hub</h2>
+                  </div>
+
+                  <div class="welcome-card__pills ps-lg-4">
+                    <a class="pil" href="">account</a>
+                    <a class="pil purple" href="">history</a>
+                    <a class="pil purple" href="">logout</a>
+                  </div>
+
+                  <h2 class="ps-lg-4 mb-3">you have - 670 referrals</h2>
+
+                  <div class="refer-code-wrap ps-lg-4">
+                    <input type="text" name="" id="refer-code" value="https://payou.xyz?r=1" readonly>
+                    <button class="copy-btn">
+                      <i class="fas fa-copy"></i>
+                    </button>
+                  </div>
+
+                  <p class="commission-text">
+                    we provide 50% commissions!
+                  </p>
+
+                  <div class="ad">ads here</div>
+                </div>
+              </div>
+
+              <div class="col-lg-5">
+                <div class="card-sm purple">
+                  <div class="icon">
+                    <img src="img/floki.svg" alt="">
+                  </div>
+
+                  <div class="text">
+                    <h2>785,155,152,150</h2>
+                    <p>account balance</p>
+                  </div>
+                </div>
+
+                <div class="card-sm orange">
+                  <div class="icon">
+                    <img src="img/floki.svg" alt="">
+                  </div>
+
+                  <div class="text">
+                    <h2>158,051</h2>
+                    <p>Staking Balance</p>
+                  </div>
+                </div>
+
+                <div class="card-sm sky mb-lg-0">
+                  <div class="icon">
+                    <img src="img/floki.svg" alt="">
+                  </div>
+
+                  <div class="text">
+                    <h2>500,000</h2>
+                    <p>Deposit Balance</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row px-3">
+              <div class="col-lg-4">
+                <div class="card-lg">
+                  <div class="icon">
+                    <img src="img/f1.svg" alt="">
+                  </div>
+ 
+                  <h2>Floki Claiming</h2>
+                </div>
+              </div>
+
+              <div class="col-lg-4">
+                <div class="card-lg">
+                  <div class="icon">
+                    <img src="img/f2.svg" alt="">
+                  </div>
+
+                  <h2>Floki Mining</h2>
+                </div>
+              </div>
+
+              <div class="col-lg-4">
+                <div class="card-lg">
+                  <div class="icon">
+                    <img src="img/f3.svg" alt="">
+                  </div>
+
+                  <h2>Offers</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <!-- ########## js ########## -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/dash.js"></script>
+  </body>
+
+</html>
