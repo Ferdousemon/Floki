@@ -84,6 +84,18 @@ ul {
 .logo {
   display: flex;
   max-width: 18rem;
+  padding: 10px ;
+}
+.logo img{
+  height: 50px;
+  width: 50px;
+}
+.logo span{
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  color: #fff;
 }
 
 .nav-links {
