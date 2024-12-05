@@ -14,6 +14,7 @@ body{
   background-position: center;
   background-size: cover;
   font-family: "Funnel Display", sans-serif;
+  color: whitesmoke;
  
 }
 .logo {
@@ -32,13 +33,14 @@ body{
   display: flex;
   align-items: center;
   font-size: 24px;
-  color: black;
+  color: whitesmoke;
 }
 
 form{
   padding: 50px;
   width: 24%;
-  background-color: #fff;
+  /* background-color: #fff; */
+  backdrop-filter: blur(10px);
   border-radius: 20px;
   margin-top: 150px;
 }
